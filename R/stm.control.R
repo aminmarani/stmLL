@@ -64,7 +64,8 @@ stm.control <- function(documents, vocab, settings, model=NULL) {
   #Step 2: Run EM
   ############
   while(!stopits) {
-
+  
+    print(stopits)
     #one set of updates with groups, another without.
     if(ngroups!=1) {
       #####
